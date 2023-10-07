@@ -1,0 +1,125 @@
+/* Style our form and other basic site components*/
+p, li, a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* give a look to the (poorly) styled header and masthead */
+header{
+    display: flex;
+    width: 100%;
+    height: 170px;
+}
+header div{
+    height: 95%;
+    width: auto;
+    flex-grow: 1;
+}
+header div img{
+    height: 100%;
+    width: auto;
+    color: rgba(26, 24, 24, 0.837)
+}
+header nav{
+    height: 100%;
+    width: auto;
+}
+header nav menu{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 70px;
+}
+header nav menu li{
+    padding: 1px 20px;
+    font-weight: 700;
+    font-size: 26px;
+    color: #0e0e0e;
+    margin-bottom: 31px;
+}
+header nav menu li:last-child{
+    margin-right: 25px;
+}
+header nav menu li:hover{
+    color: dimgray;
+}
+/* First section will act as a masthead, and underneath will lay the form on the left and some advertising on the right */
+.main-index{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-index section:first-of-type{
+    background-image: url(../img/sample2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 74vh;
+    width: 100%;
+}
+.main-index section:first-of-type h2,
+.main-index section:first-of-type p{
+    margin-top: 149px;
+    color: #e0e0e0;
+    margin-left: 9%;
+    font-size: 43px;
+}
+
+.main-index section figure{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.main-index section figure img{
+    width: auto;
+    height: 270px;
+    margin-bottom: -80px;
+}
+
+.main-index section:nth-child(2){
+    height: 85vh;
+    display: flex;
+}
+.main-index section form{
+    height: 85vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.main-index section form h3{
+    font-size: 17px;
+}
+label{
+    margin-left: 3%;
+    padding: 7px;
+}
+input{
+    margin-left: 4%;
+    padding: 7px;
+    width: 50%;
+    padding: 8px;
+    border: 1px solid #0e0e0e;
+    border-radius: 5px;
+}
+input:last-of-type{
+    padding: 8px 15px;
+    margin-top: 20px;
+    background-color: #353434;
+    color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Expertly crafted footer */
+footer{text-align: center;}
+
+/* thank you message for payment confirmation */
+
+.thanks-for-eating{
+    width: 45%;
+    margin: auto;
+    text-align: center;
+}
